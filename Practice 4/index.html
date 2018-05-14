@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practice 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .signup_form {
+            width: 450px;
+            height: 486px;
+            display: block;
+            margin: 10% 20%;
+        }
+
+        .signup_form input {
+            width: 450px;
+            padding: 7px;
+        }
+
+        .signup_form label {
+            display: block;
+        }
+
+        .signup_form p {
+            margin-top: 0px;
+        }
+
+        .signup_form button {
+            padding: 10px;
+            background-color: #31C653;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+
+        #last_p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            border-top: 1px solid #DDDDDD;
+            border-bottom: 1px solid #DDDDDD;
+            /* color: red; */
+        }
+
+        .signup_form input {
+            background-color: #FAFBFC;
+        }
+
+        .signup_form input:hover {
+            background-color: #FAFFBD;
+        }
+
+        .problem {
+            padding: 10px;
+            background-color: #FFDCE0;
+
+        }
+
+        .text_problem {
+            background-color: #FFDCE0;
+            padding: 4px;
+            display: inline;
+        }
+    </style>
+    <script>
+        const Validate = () => {
+            if (document.getElementById('name').value == "") {
+
+                document.getElementById('text_name').innerHTML = '<div class="text_problem">' + "Name can't be blank!</div>";
+                document.getElementById('problem').innerHTML = '<div class="problem">' + "There were problems creating your account.</div>";
+
+            }
+
+            if (document.getElementById('email').value == "") {
+                document.getElementById('text_email').innerHTML = '<div class="text_problem">' + "Email can't be blank!</div>";
+                document.getElementById('problem').innerHTML = "There were problems creating your account.";
+
+            }
+
+            if (document.getElementById('password').value == "") {
+                document.getElementById('text_password').innerHTML = '<div class="text_problem">' + "Password can't be blank and is too short (minimum is 7 characters)</div>";
+                document.getElementById('problem').innerHTML = '<div class="problem">' + "There were problems creating your account.</div>";
+
+
+            } else if (document.getElementById('password').value.length < 7) {
+                document.getElementById('text_password').innerHTML = '<div class="text_problem">' + "Password is too short (minimum is 7 characters) and needs at least one lowercase letter</div>";
+                document.getElementById('problem').innerHTML = '<div class="problem">' + "There were problems creating your account.</div>";
+
+            }
+
+
+            if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('name').value == "" || document.getElementById('password').value.length < 7)
+                return false;
+            else return true;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <form class="signup_form">
+            <h3>Create your personal account </h3>
+            <div id="problem"></div>
+            <div>
+                <label>Username</label>
+                <input type="text" name="name" id="name">
+                <p id="text_name">This will be your username. You can add the name of your organization later.</p>
+                <label>Email address</label>
+                <input type="text" id="email" name="email">
+                <p id="text_email">We’ll occasionally send updates about your account to this inbox. We’ll never share your email address with
+                    anyone.
+                </p>
+                <label>Password</label>
+                <input type="text" id="password" name="password">
+                <p id="text_password">Use at least one lowercase letter, one numeral, and seven characters.</p>
+                <p id="last_p">By clicking “Create an account” below, you agree to our <a href="">terms of service</a>  and <a href="">privacy statement</a>. We’ll occasionally
+                    send you account related emails.</p>
+                <button type="submit" onclick="return Validate()">Create an account</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
