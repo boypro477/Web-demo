@@ -1,0 +1,25 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").keydown(function(){
+        $(this).hide();
+    });
+	  $("span").mouseenter(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+<body>
+<p>Sử dụng jquery xử lý sự kiện khi nhập 1 ký tự vào ô nhập thì ô nhập biến mất
+và khi di chuyển chuột qua thẻ span thì thẻ span biến mất</p>
+<input type="text" value="Press any key inside me to hide me" size="40">
+
+<span>If you mouse over me, I will disappear.</span><br>
+<span>If you mouse over me, I will disappear.</span>
+
+</body>
+</html>
