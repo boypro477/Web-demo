@@ -18,7 +18,15 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="public/css/oder_style.css">
     <script src="public/js/order_js.js"></script>
-
+    <style>
+       .modal-body {
+    position: relative;
+    padding: 15px;
+}.title-login {
+    padding-bottom: 30px;
+    text-align: center;
+}
+    </style>
 </head>
 
 <body>
@@ -35,6 +43,28 @@
                             <span class="cam">The Coffee House Rewards</span> của bạn để tích điểm và nhận các ưu đãi nhé!</p>
                     </div>
                     <div class="content">
+                        <!-- Form đăng nhập -->
+                        <div class="modal-content modal-login" id="loginModalContent" >
+                            <div class="modal-body" >
+                                <i class="fa fa-times hide-login" aria-hidden="true" ></i>
+                                <div class="title-login">ĐĂNG NHẬP</div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="username-login" placeholder="Email" >
+                                </div>
+                                <div class="form-group" >
+                                    <input type="password" class="form-control" id="password-login" placeholder="Password" >
+                                </div>
+                                <div class="alert alert-danger message-warning" ></div>
+                            </div>
+                            <div class="social-login" data-reactid=".0.6.0.0.1">
+                                <a class="btn btn-block btn-social btn-facebook" id="login-fb" >
+                                    <i class="fa fa-facebook" ></i>
+                                    <span>Sign in with Facebook</span>
+                                </a>
+                            </div>
+                            <div class="modal-footer submit-login" >OK</div>
+                        </div>
+                        <!-- End form đăng nhập -->
                         <div class="row">
                             <div class="col-6">
                                 <img class="tch" src="public/img/order/tch.jpg" alt="Giao hang tan noi">
