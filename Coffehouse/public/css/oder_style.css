@@ -38,7 +38,7 @@ footer {
 }
 
 .col-sm-4 {
-    background-image: url("public/img/order/main-left.gif");
+    background-image: url("../img/order/main-left.gif");
     width: 100%;
     height: 100%;
     position: fixed;
@@ -47,7 +47,7 @@ footer {
 }
 
 .col-sm-8 {
-    background-image: url("public/img/order/menu.gif");
+    background-image: url("../img/order/menu.gif");
 }
 
 .card-header {
