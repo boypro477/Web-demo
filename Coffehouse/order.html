@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="public/css/oder_style.css">
+    <script src="public/js/order_js.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-8">
+                <div class="first_layout">
+                    <div class="title">
+                        <h3 id="test">ĐẶT HÀNG VÀ GIAO TẬN NƠI TẠI</h3>
+                        <h2>THE COFFEE HOUSE DELIVERY</h2>
+                        <p>Đừng quên
+                            <span class="cam" id="login-href">Đăng nhập</span> vào tài khoản
+                            <span class="cam">The Coffee House Rewards</span> của bạn để tích điểm và nhận các ưu đãi nhé!</p>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="tch" src="public/img/order/tch.jpg" alt="Giao hang tan noi">
+                            </div>
+                            <div class="col-6">
+                                <ul style="list-style-type:none">
+                                    <li class="first">Các bước đặt món</li>
+                                    <li>
+                                        <span class="icon">1</span> Điền thông tin nhận hàng (tên, số điện thoại, địa chỉ nhận hàng)</li>
+                                    <li>
+                                        <span class="icon">2</span> Chọn món yêu thích</li>
+                                    <li>
+                                        <span class="icon">3</span> Tối đa 30 phút
+                                        <span class="cam">(*)</span> bạn sẽ có ngay món uống yêu thích!</li>
+                                </ul>
+                                <div class="notes cam">(*) Thời gian có thể khác nhau tùy thuộc vào vị trí và giao thông tại thời điểm đặt hàng</div>
+                                <div class="notes cam">Thời gian phục vụ : 7h-20h</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-list">
+                        <div class="title-menu">MENU "NHÀ CÀ PHÊ"</div>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Món nổi bật
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cookies đá xay</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1275.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Bánh Cookie, Sữa tươi, Kem tươi</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cà phê đen</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1419.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Espresso, sữa tươi, caramel, đá viên</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Trà dưa hấu bạc hà</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1615.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Sinh tố dưa hấu</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1616.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào, yogurt</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Cà phê
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cookies đá xay</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1275.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Bánh Cookie, Sữa tươi, Kem tươi</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cà phê đen</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1419.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Espresso, sữa tươi, caramel, đá viên</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Trà dưa hấu bạc hà</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1615.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Sinh tố dưa hấu</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1616.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào, yogurt</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Sô Cô La
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cookies đá xay</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1275.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Bánh Cookie, Sữa tươi, Kem tươi</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cà phê đen</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1419.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Espresso, sữa tươi, caramel, đá viên</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Trà dưa hấu bạc hà</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1615.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Sinh tố dưa hấu</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1616.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào, yogurt</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Thức uống trái cây
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cookies đá xay</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1275.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Bánh Cookie, Sữa tươi, Kem tươi</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cà phê đen</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1419.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Espresso, sữa tươi, caramel, đá viên</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Trà dưa hấu bạc hà</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1615.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Sinh tố dưa hấu</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1616.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào, yogurt</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Trà đặc biệt
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cookies đá xay</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1275.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Bánh Cookie, Sữa tươi, Kem tươi</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cà phê đen</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1419.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Espresso, sữa tươi, caramel, đá viên</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Trà dưa hấu bạc hà</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1615.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Sinh tố dưa hấu</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1616.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào, yogurt</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Gift
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cookies đá xay</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1275.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Bánh Cookie, Sữa tươi, Kem tươi</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Cà phê đen</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1419.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Espresso, sữa tươi, caramel, đá viên</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Trà dưa hấu bạc hà</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1615.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="panel panel-danger">
+                                                    <div class="panel-heading">Sinh tố dưa hấu</div>
+                                                    <div class="panel-body">
+                                                        <img src="public/img/order_coffe/1616.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    </div>
+                                                    <div class="panel-footer">Hồng trà, dưa hấu bạc hà, đá bào, yogurt</div>
+                                                    <div class="row">
+                                                        <div class="col-6 add_cup1">
+                                                            <img src="public/img/order/coffe-cup-s-a.png" alt="size nhỏ">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="45">
+                                                                45k
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 add_cup2">
+                                                            <img src="public/img/order/coffe-cup-m-a.png" alt="size lớn">
+                                                            <i class="fa fa-plus icon-plus"></i>
+                                                            <div class="price-cup" data-id="60">
+                                                                60k
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4 ">
+                <div class="header">
+                    <img src="public/img/order/logo_tch_black.png">
+                </div>
+                <div class="content">
+                    <div class="info-client">
+                        <div class="name-phone-info-input">
+                            <label>Thông tin người nhận </label>
+                            <div class="form-group">
+                                <input type="text" class="form-control input-info input-name" id="name-info" placeholder="Tên">
+                                <input type="text" class="form-control input-info input-phone" id="phone-info" placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control input-info input-email" id="email-info" placeholder="Email">
+                            </div>
+                            <!-- <div class="alert alert-danger tch-warning tch-warning-name hidden">Vui lòng nhập đầy đủ tên và số điện thoại</div>
+                            <div class="alert alert-danger tch-warning tch-warning-phone hidden">Vui lòng nhập đúng số điện thoại</div>
+                            <div class="alert alert-danger tch-warning tch-warning-email hidden">Vui lòng nhập đúng định dạng email</div> -->
+                        </div>
+                        <span>
+                            <input type="radio" name="radAnswer">
+                        </span>
+                        <span>Giao hàng ngay</span>
+
+                        <span>
+                            <input type="radio" name="radAnswer">
+                        </span>
+                        <span>Chọn thời gian</span>
+                    </div>
+                    <div class="place-client">
+                        <p>
+                            <label>Địa điểm giao hàng</label>
+                        </p>
+                        <div class="form-group">
+                            <input class="form-control input-info input-diachi" type="text" placeholder="Địa chỉ">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control input-info input-quanhuyen" type="text" placeholder="Quận/Huyện">
+                            <input class="form-control input-info input-thanhpho" type="text" placeholder="Tỉnh/Thành phố">
+                        </div>
+                    </div>
+                    <div id="quy2" class="row">
+
+
+
+                        <div class="glass-icon">
+                            <span>
+                                <img src="public/img/order/ly.png">
+                            </span>
+                        </div>
+                        <div id="nhan">
+                            <span>
+                                <i class="fa fa-times multi-icon"></i>
+                            </span>
+                        </div>
+                        <span>
+                            <div id="number_cup"></div>
+                        </span>
+                        <span>
+                            <img class="equal-icon" src="public/img/order/pause-symbol.png">
+                        </span>
+                        <span>
+                            <div id="result_cup"></div>
+                        </span>
+
+                    </div>
+                    <button class="btn btn-submit-info-active" id="payment-btn">XEM GIỎ HÀNG</button>
+
+                </div>
+            </div>
+            <!-- <button class="btn btn-warning" type="button">Xem giỏ hàng</button> -->
+
+        </div>
+
+        <div id="btn-show-logout" class="clearfix footer-profile" data-toggle="modal" data-target="#loginModal">
+            <div class="div-hotline">
+                <div>HOTLINE</div>
+                <div class="hotline">1800 6936</div>
+            </div>
+            <img src="public/img/order/user_avatar.png" class="user-avatar">
+            <span class="name-user">Đăng nhập để tích điểm</span>
+            <span class="point-user heartTCH hidden">
+
+                <i class="fa fa-heart heartTCH" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <!-- <footer class="container-fluid">
+        <p>Footer Text</p>
+    </footer> -->
+
+</body>
+
+</html>
